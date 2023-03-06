@@ -1,0 +1,33 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Selecting All Preceding Siblings between Two Elements in jQuery</title>
+<style>
+    .highlight{
+     background: aqua;
+    }
+</style>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("ul").prevUntil("h1").addClass("highlight");
+});
+</script>
+</head>
+<body>
+    <div class="container">
+        <h1>Hello World</h1>
+        <p>This is a <em>simple paragraph</em>.</p>
+        <p>This is another paragraph.</p>
+        <ul>
+            <li>Item One</li>
+            <li>Item Two</li>
+        </ul>
+    </div>
+</body>
+</html>

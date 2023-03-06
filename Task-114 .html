@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+  
+    <script src=
+"https://code.jquery.com/jquery-3.5.1.min.js">
+    </script>
+  
+    <title>
+        How to select all next sibling elements 
+        of an element using jQuery?
+    </title>
+  
+    <style>
+        .main {
+            width: 450px;
+            text-align: justify;
+            font-size: 18px;
+        }
+  
+        #GFG {
+            padding: 5px 15px;
+            margin-top: 20px;
+        }
+  
+        .Geeks {
+            font-size: 18px;
+            font-weight: bold;
+            color: rgb(67, 10, 200);
+        }
+    </style>
+  
+    <script>
+        $(document).ready(function () {
+            $("#GFG").on('click', function () {
+                $("h3").nextAll().addClass("Geeks");
+            });
+        });
+    </script>
+</head>
+  
+<body>
+    <center>
+        <h1 style="color: rgb(183, 23, 109);">
+           silver oak univer city
+        </h1>
+  
+        <h3>
+           
+        </h3>
+  
+        <div class="main">
+            <div class="section1">
+                HTML stands for HyperText Markup
+                Language. It is used to design
+                web pages using a markup language.
+                HTML is the combination of
+                Hypertext and Markup language.
+            </div>
+            <br>
+  
+            <div class="section2">
+                Cascading Style Sheets, fondly
+                referred to as CSS, is a simply
+                designed language intended to
+                simplify the process of making
+                web pages.
+            </div>
+        </div>
+  
+        <input type="button" id="GFG" 
+            value="Remove Contents">
+    </center>
+</body>
+  
+</html>

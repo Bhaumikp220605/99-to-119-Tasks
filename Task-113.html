@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+          
+    <script src=
+"https://code.jquery.com/jquery-3.5.1.min.js">
+    </script>
+  
+    <title>
+        How to select all sibling elements
+        of an element using jQuery?
+    </title>
+  
+    <style>
+        .main {
+            width: 450px;
+            text-align: justify;
+            font-size: 18px;
+        }
+  
+        #GFG {
+            padding: 5px 15px;
+            margin-top: 20px;
+        }
+  
+        .Geeks {
+            font-size: 18px;
+            font-weight: bold;
+            color: rgb(120, 31, 171);
+        }
+    </style>
+  
+    <script>
+        $(document).ready(function () {
+            $("#GFG").on('click', function () {
+                $(".section1").siblings().addClass("Geeks");
+            });
+        });
+    </script>
+</head>
+  
+<body>
+    <center>
+        <h1 style="color: rgb(31, 141, 215);">
+          parul univercity
+        </h1>
+  
+        <h3>
+          
+        </h3>
+  
+        <div class="main">
+            <div class="section1">
+               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse ea necessitatibus unde, quis aut id corporis cumque neque incidunt facere maxime dignissimos, dicta doloribus. Eius dolores earum expedita quaerat, nulla minima commodi eaque eos facere voluptatibus minus deleniti in omnis? Rerum enim, corporis amet quidem veritatis eum dicta deleniti repudiandae.
+            </div>
+  
+            <div class="section2">
+               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo modi minus maxime eum illo quo nihil accusantium ducimus culpa! Atque, ipsam quia doloremque explicabo vel ea mollitia dignissimos sed enim doloribus molestias voluptatibus necessitatibus natus. Fugit blanditiis perferendis quas quis, a, assumenda quia, obcaecati ullam modi totam debitis et possimus!
+            </div>
+        </div>
+  
+        <input type="button" id="GFG" 
+            value="Remove Contents">
+    </center>
+</body>
+  
+</html>

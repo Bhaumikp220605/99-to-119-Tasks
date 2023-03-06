@@ -1,0 +1,44 @@
+<!DOCTYpe html>
+<html>
+  
+<head>
+    <title>
+        How to select specific ancestor 
+        elements of an element in jQuery?
+    </title>
+  
+    <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+  
+    <script>
+        $(document).ready(function () {
+            $("li").parents("ul").css({
+                color: "blue",
+                border: "2px solid pink"
+            });
+        });
+    </script>
+</head>
+  
+<body>
+    <h1 style="color: rgb(34, 137, 201);">
+        GeeksforGeeks
+    </h1>
+  
+    <h3>
+        How to select specific ancestor 
+        elements of an element in jQuery?
+    </h3>
+  
+    <p>GeeksforGeeks Subjects List-</p>
+  
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>PHP</li>
+    </ul>
+</body>
+  
+</html>

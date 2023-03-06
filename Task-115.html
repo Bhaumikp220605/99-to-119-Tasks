@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+  
+    <script src=
+"https://code.jquery.com/jquery-3.5.1.min.js">
+    </script>
+  
+    <title>
+        How to select all next sibling elements 
+        of an element using jQuery?
+    </title>
+  
+    <style>
+        .main {
+            width: 450px;
+            text-align: justify;
+            font-size: 18px;
+        }
+  
+        #GFG {
+            padding: 5px 15px;
+            margin-top: 20px;
+        }
+  
+        .Geeks {
+            font-size: 18px;
+            font-weight: bold;
+            color: rgb(63, 142, 198);
+        }
+    </style>
+  
+    <script>
+        $(document).ready(function () {
+            $("#GFG").on('click', function () {
+                $("h3").nextAll().addClass("Geeks");
+            });
+        });
+    </script>
+</head>
+  
+<body>
+    <center>
+        <h1 style="color: rgb(79, 28, 219);">
+           silver  oak univercity
+        </h1>
+  
+        <h3>
+           
+        </h3>
+  
+        <div class="main">
+            <div class="section1">
+               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et deserunt similique neque assumenda sequi tempora, maiores ut temporibus incidunt. Neque blanditiis reiciendis officia nihil labore cumque ipsam, vero a corrupti. Fuga quaerat accusamus aut nostrum nesciunt itaque vero incidunt suscipit mollitia nemo, non ad iusto blanditiis minima error quasi odit.
+            </div>
+            <br>
+  
+            <div class="section2">
+               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur tempora, quisquam, id doloremque tempore aperiam hic, vero architecto quis est libero alias? Exercitationem est numquam ipsa minima pariatur, porro nobis doloribus dignissimos corporis deleniti officiis nulla temporibus quas. Tempora incidunt ratione, autem eos voluptatem nisi nostrum quidem obcaecati. Voluptas, error.
+            </div>
+        </div>
+  
+        <input type="button" id="GFG" 
+            value="change color">
+    </center>
+</body>
+  
+</html>

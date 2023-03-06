@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#button1").click(function(){
+        $("div").width(300);
+    });
+    $("#button2").click(function(){
+        $("div").width(400);
+    });
+});
+</script>
+</head>
+<body>
+<div style="height:150px;width:200px;border:2px solid rgba(11, 11, 11, 0.845);background-color:rgba(155, 180, 188, 0.217);"></div><br>
+<button id="button1">Width of div: 300</button>
+<button id="button2">Width of div: 400</button><br>
+
+</body>
+</html>
